@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    gap: 10rem;
+    background-color: #F2F2F2;
+    font-family: "Manrope", sans-serif;
+  }
+  
+  /* Share popup container */
+  .share-popup {
+    position: absolute;
+    background-color: #48556A; 
+    color: #9DAEC2;
+    border-radius: 10px;
+    gap: 0.5rem;
+    display: none;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0 1rem;
+    width: fit-content;
+    bottom: 5rem;
+    right: -3.5rem;
+  }
+
+  /* Arrow below the tooltip */
+  .share-popup::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #48556A; /* Same color as popup background */
+  }
+
+  /* Styling for images */
+  .share-popup img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 10px
+  }
+
+
+  .side-img {
+    width: 18rem; 
+    height: auto;
+    border-radius: 10px 0 0 10px;
+  }
+.content {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  max-width: 2.5rem;
+
+}
+
+.user{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-info{
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 1rem;
+}
+#btnShare{
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-left: auto; /* Pushes the icon to the right */
+  background-color: #ECF2F8;
+  border: none;
+}

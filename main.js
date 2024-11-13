@@ -5,7 +5,8 @@ const popup = document.getElementById('popup');
 const icons = popup.querySelectorAll('a')
 
 button.addEventListener('click', () => {
-    popup.style.display = 'flex';
+    const displayValue = window.getComputedStyle(popup).display;
+    popup.style.display = displayValue === 'flex' ? 'none' : 'flex'
 })
 
 icons.forEach(icon => {
